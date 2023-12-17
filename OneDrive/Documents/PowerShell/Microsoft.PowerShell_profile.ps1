@@ -2,6 +2,8 @@ oh-my-posh init pwsh --config 'C:\Users\trann\AppData\Local\Programs\oh-my-posh\
 
 # import-module PsReadLine
 Import-Module -Name Terminal-Icons
+Import-Module -Name posh-wakatime
+Import-Module -Name posh-git
 
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward

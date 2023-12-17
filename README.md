@@ -169,6 +169,12 @@ Install-Module -Name PSReadLine -Force -SkipPublisherCheck
 
 # Terminal icons
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+
+# Wakatime
+Install-Module -Name posh-wakatime -Force
+
+# Posh git
+Install-Module posh-git -Force
 ```
 
 -   Update oh-my-posh
@@ -181,6 +187,12 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 ```PSReadLineRemoveHistory.ps1
 Get-PSReadlineOption | select -expand historysavepath | Remove-Item
+```
+
+-   List all modules installed in Powershell
+
+```getModule.ps1
+Get-Module -ListAvailable
 ```
 
 ## DOTFILES TRACK SHORTCUT FILES
