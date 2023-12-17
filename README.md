@@ -1,6 +1,6 @@
 # KEVINNITRO WINDOWS DOTFILES
 
-## Setup public dotfiles
+## SETUP PUBLIC WINDOWS DOTFILES
 
 -   Setup
 
@@ -51,7 +51,58 @@ df config --local core.autocrlf false
 df config --local status.showUntrackedFiles no
 ```
 
-## Choco
+## SETUP PRIVATE WINDOWS DOTFILES
+
+-   Setup
+
+```setupDotfiles.ps1
+git init --bare $env:USERPROFILE/kevinnitro_private_windows_dotfiles
+
+function pdf {
+	git --git-dir=$env:USERPROFILE/kevinnitro_private_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
+}
+
+pdf config --local core.autocrlf false
+
+pdf config --local status.showUntrackedFiles no
+pdf config --local user.name "KevinNitroG"
+pdf config --local user.email "trannguyenthaibinh46@gmail.com"
+
+# SSH
+# pdf remote add origin git@github.com:KevinNitroG/KevinNitro-Private-Windows-Dotfiles.git
+
+# HTTPS
+pdf remote add origin https://github.com/KevinNitroG/KevinNitro-Private-Windows-Dotfiles.git
+
+pdf push --set-upstream origin main
+```
+
+-   Restore
+
+```restoreDotfiles.ps1
+# Ignore kevinnitro_private_windows_dotfiles folder
+Add-Content -Path .gitignore -Value "kevinnitro_private_windows_dotfiles"
+
+# HTTPS Clone
+git clone --bare https://github.com/KevinNitroG/KevinNitro-Private-Windows-Dotfiles.git kevinnitro_private_windows_dotfiles
+
+# SSH Clone
+# git clone --bare git@github.com:KevinNitroG/KevinNitro-Private-Windows-Dotfiles.git kevinnitro_private_windows_dotfiles
+
+# Backup old dotfiles
+pdf checkout
+# If error then move those files to backup folder
+mkdir -p kevinnitro_backup_old_private_dotfiles
+
+function pdf {
+	git --git-dir=$env:USERPROFILE/kevinnitro_private_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
+}
+
+pdf config --local core.autocrlf false
+pdf config --local status.showUntrackedFiles no
+```
+
+## CHOCO
 
 1. Install Choco _(Powershell admin)_
 
@@ -85,7 +136,7 @@ iex(irm is.gd/idm_reset)
 irm https://massgrave.dev/get | iex
 ```
 
-## Other apps
+## OTHER APPS
 
 -   PITVN: https://docs.google.com/spreadsheets/d/e/2PACX-1vRlK-vRwPJHDaANT81EjyG4m5ZnLXdKRYfS0eKXyCzGymEfUDmKHRhxvUbtWYTfVn7MJ3E2jk7v3cGi/pubhtml#
 
@@ -105,7 +156,7 @@ irm https://massgrave.dev/get | iex
 
 -   OBS Background Removal: https://github.com/occ-ai/obs-backgroundremoval/releases/latest
 
-## Powershell customise
+## POWERSHELL CUSTOMISE
 
 -   Install
 
@@ -132,7 +183,7 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 Get-PSReadlineOption | select -expand historysavepath | Remove-Item
 ```
 
-## Dotfiles track shortcut files
+## DOTFILES TRACK SHORTCUT FILES
 
 -   Add
 
@@ -146,7 +197,7 @@ df update-index --assume-unchanged [file]
 df update-index --no-assume-unchanged [file]
 ```
 
-## Git command
+## GIT COMMAND
 
 -   Stop tracking file
 
@@ -166,7 +217,7 @@ df rm -r --cached <folder>
 df ls-tree --full-tree --name-only -r HEAD
 ```
 
-## GPG Backup / Restore
+## GPG BACKUP / RESTORE
 
 <!-- -   GPG restart
 
@@ -202,10 +253,10 @@ git config --global gpg.format ssh
 git config --global user.signingkey $env:USERPROFILE/.ssh/id_rsa.pub
 ```
 
-## Windows Variable
+## WINDOWS VARIABLE
 
 https://learn.microsoft.com/en-us/windows/deployment/usmt/usmt-recognized-environment-variables
 
-## Datetime format
+## DATETIME FORMAT
 
 https://help.scribesoft.com/scribe/en/sol/general/datetime.htm

@@ -25,7 +25,7 @@ function df {
 	git --git-dir=$env:USERPROFILE/kevinnitro_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
 }
 
-function dfu {
+function dfs {
 	df pull
 	df add -u
 	df commit -m "Update Windows Dotfiles at $(Get-Date -Format 'h:mm tt on d/M/y')"
@@ -41,7 +41,7 @@ function pdf {
 	git --git-dir=$env:USERPROFILE/kevinnitro_private_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
 }
 
-function pdfu {
+function pdf {
 	pdf pull
 	pdf add -u
 	pdf commit -m "Update Private Windows Dotfiles at $(Get-Date -Format 'h:mm tt on d/M/y')"
@@ -50,4 +50,13 @@ function pdfu {
 
 function pdfa {
 	pdf add $args
+}
+
+# ALL DOTFILES
+
+# Sync all Public & Private dotfiles
+# All Dot Files Sync
+function adfs {
+	dfs
+	pdfs
 }
