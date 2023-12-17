@@ -41,7 +41,7 @@ function pdf {
 	git --git-dir=$env:USERPROFILE/kevinnitro_private_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
 }
 
-function pdf {
+function pdfs {
 	pdf pull
 	pdf add -u
 	pdf commit -m "Update Private Windows Dotfiles at $(Get-Date -Format 'h:mm tt on d/M/y')"
