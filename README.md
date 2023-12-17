@@ -18,10 +18,12 @@ df config --local user.name "KevinNitroG"
 df config --local user.email "trannguyenthaibinh46@gmail.com"
 
 # SSH
-# git remote add origin git@github.com:KevinNitroG/kevinnitro-windows-dotfiles.git
+# df remote add origin git@github.com:KevinNitroG/KevinNitro-Windows-Dotfiles.git
 
 # HTTPS
-df remote add origin https://github.com/KevinNitroG/kevinnitro-windows-dotfiles.git
+df remote add origin https://github.com/KevinNitroG/KevinNitro-Windows-Dotfiles.git
+
+df push --set-upstream origin main
 ```
 
 -   Restore
@@ -31,10 +33,10 @@ df remote add origin https://github.com/KevinNitroG/kevinnitro-windows-dotfiles.
 Add-Content -Path .gitignore -Value "kevinnitro_windows_dotfiles"
 
 # HTTPS Clone
-git clone --bare https://github.com/KevinNitroG/kevinnitro-windows-dotfiles.git kevinnitro_windows_dotfiles
+git clone --bare https://github.com/KevinNitroG/KevinNitro-Windows-Dotfiles.git kevinnitro_windows_dotfiles
 
 # SSH Clone
-# git clone --bare git@github.com:KevinNitroG/kevinnitro-windows-dotfiles.git kevinnitro_windows_dotfiles
+# git clone --bare git@github.com:KevinNitroG/KevinNitro-Windows-Dotfiles.git kevinnitro_windows_dotfiles
 
 # Backup old dotfiles
 df checkout
