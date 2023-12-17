@@ -156,6 +156,11 @@ irm https://massgrave.dev/get | iex
 
 -   OBS Background Removal: https://github.com/occ-ai/obs-backgroundremoval/releases/latest
 
+-   Wakatime for Office
+    -   https://github.com/wakatime/office-wakatime/releases/download/latest/ExcelSetup.zip
+    -   https://github.com/wakatime/office-wakatime/releases/download/latest/PowerPointSetup.zip
+    -   https://github.com/wakatime/office-wakatime/releases/download/latest/WordSetup.zip
+
 ## POWERSHELL CUSTOMISE
 
 -   Install
