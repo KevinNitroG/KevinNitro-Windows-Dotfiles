@@ -1,0 +1,144 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "backspace",
+        "command": "-markdown.extension.onBackspaceKey",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && !suggestWidgetVisible && vim.mode != 'CommandlineInProgress' && vim.mode != 'EasyMotionInputMode' && vim.mode != 'EasyMotionMode' && vim.mode != 'Normal' && vim.mode != 'Replace' && vim.mode != 'SearchInProgressMode' && vim.mode != 'SurroundInputMode' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine' && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "code-runner.run",
+        "when": "editorLangId != 'markdown' && editorLangId != 'rmd' && editorLangId != 'quarto'"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "bracketeer.swapQuotes"
+    },
+    {
+        "key": "ctrl+shift+alt+;",
+        "command": "-bracketeer.swapQuotes"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "bracketeer.swapBrackets"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "-bracketeer.swapBrackets"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "bracketeer.selectQuotesContent"
+    },
+    {
+        "key": "ctrl+shift+alt+0",
+        "command": "-bracketeer.selectQuotesContent"
+    },
+    {
+        "key": "ctrl+shift+9",
+        "command": "bracketeer.selectBracketContent"
+    },
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "-bracketeer.selectBracketContent"
+    },
+    {
+        "key": "ctrl+alt+9",
+        "command": "bracketeer.removeBrackets"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-bracketeer.removeBrackets"
+    },
+    {
+        "key": "ctrl+alt+'",
+        "command": "bracketeer.removeQuotes"
+    },
+    {
+        "key": "ctrl+shift+alt+'",
+        "command": "-bracketeer.removeQuotes"
+    },
+    {
+        "key": "ctrl+u ctrl+g",
+        "command": "extension.showGitmoji"
+    },
+    {
+        "key": "ctrl+u ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+u ctrl+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.createTerminalEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+`", //opt+` on macOS
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+alt+`", //ctrl+opt+` on macOS
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "workbench.action.terminal.runRecentCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "workbench.action.terminal.killAll",
+        "when": "terminalFocus"
+    }
+]
