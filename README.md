@@ -172,6 +172,18 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 # PSReadline
 Install-Module -Name PSReadLine -Force -SkipPublisherCheck
 
+# PSReadLine settings
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+# Set-PSReadLineKeyHandler -Chord Ctrl+LeftArrow BackwardWord
+# Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow ForwardWord
+# Set-PSReadLineKeyHandler -Key Tab -Function Complete
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionViewStyle ListView
+# Set-PSReadLineOption -EditMode Emacs
+Set-PSReadlineOption -EditMode Windows
+
 # Terminal icons
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 

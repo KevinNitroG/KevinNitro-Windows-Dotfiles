@@ -5,23 +5,6 @@ Import-Module -Name Terminal-Icons
 Import-Module -Name posh-wakatime
 Import-Module -Name posh-git
 
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-# Set-PSReadLineKeyHandler -Key Tab -Function Complete
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
-Set-PSReadLineOption -PredictionViewStyle ListView
-
-# Set-PSReadLineOption -EditMode Emacs
-Set-PSReadlineOption -EditMode Windows
-
-# Ctrl Arrow to left right
-# Set-PSReadLineKeyHandler -Chord Ctrl+LeftArrow BackwardWord
-# Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow ForwardWord
-
-# Find-Module Az.Tools.Predictor -AllowPrerelease
-# cls
-
 # Dotfiles config
 function df {
 	git --git-dir=$env:USERPROFILE/kevinnitro_windows_dotfiles/ --work-tree=$env:USERPROFILE $args
