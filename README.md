@@ -146,18 +146,24 @@ df update-index --assume-unchanged [file]
 df update-index --no-assume-unchanged [file]
 ```
 
-## Git stop tracking file and folder
+## Git command
 
--   File
+-   Stop tracking file
 
 ```stopTrackingFile.ps1
 df rm --cached <file>
 ```
 
--   Folder
+-   Stop tracking folder
 
 ```stopTrackingFolder.ps1
 df rm -r --cached <folder>
+```
+
+-   List all tracked files
+
+```listAllTrackedFiles.ps1
+df ls-tree --full-tree --name-only -r HEAD
 ```
 
 ## GPG Backup / Restore
