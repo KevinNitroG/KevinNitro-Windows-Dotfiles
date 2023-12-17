@@ -1,9 +1,15 @@
 oh-my-posh init pwsh --config 'C:\Users\trann\AppData\Local\Programs\oh-my-posh\themes\hunk.omp.json'| Invoke-Expression
 
-# import-module PsReadLine
-Import-Module -Name Terminal-Icons
+import-module PsReadLine
+# Import-Module -Name Terminal-Icons
 Import-Module -Name posh-wakatime
 Import-Module -Name posh-git
+
+# PSReadLine config
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadlineOption -EditMode Windows
 
 # Dotfiles config
 function df {
