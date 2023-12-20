@@ -113,7 +113,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 2. Install apps
 
 ```installChocoApps.ps1
-choco install putty spotify 7zip winrar internet-download-manager vscode authy-desktop warp git gpg4win javaruntime vlc nodejs python obs-studio.install parsec powershell-core powertoys sublimetext3 ultraviewer winfsp winscp -y
+choco install putty spotify 7zip winrar internet-download-manager vscode authy-desktop warp git javaruntime vlc nodejs python obs-studio.install parsec powershell-core powertoys sublimetext3 ultraviewer winfsp winscp -y
 ```
 
 3. Patch apps mod
@@ -327,8 +327,6 @@ git config --global --unset gpg.format
 # Set new GPG key
 git config --global user.signingkey 7BFAA5F4BCE07838
 git config --global commit.gpgsign true
-git config --global gpg.format ssh
-git config --global user.signingkey $env:USERPROFILE/.ssh/id_rsa.pub
 ```
 
 ## SSH Key
@@ -337,13 +335,13 @@ git config --global user.signingkey $env:USERPROFILE/.ssh/id_rsa.pub
 
 ```showPublicSSHKey.ps1
 # Show Public SSH Key
-type ~\.ssh\id_rsa.pub
+type ~\.ssh\main_ssh.pub
 ```
 
 -   Public SSH Key
 
 ```
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDap/5GnLxYYNJ2QB1rYRgXyHLQud0L3Y6sfiPL6iAdqZRm+f+006DeZtJ4oP2IN8oS6nF6tfWhCaQ91jv3fZWO+olhyBZulSGbb75WdcqLcctfDwc9er+BZZZMBsF0inEbCgHEooo5kelkuuPIEUmeqn9ozUtQ4A6mLIurjsGfy2nD2bCjYys3UxUa09xEiQxvgHnlvSPCh9XvG1h4eX611GI6EbtJoOvzFPYzaxdNosbombq1HMnNGXk3TMS9fghE1GjnMiBbrortGn6mT0aNi//N9Wgr9AYR0dY2BWk1CZXF78G4MWZoaLOLW5sriMjU881UbfmJx6MmvMAEHDrfJDIQAIoRsjAJbw00SoZjspEg3R8f8ekNjduzikG65noMJGd+jTD7MtBDe+YNCuZp6UQAPwbPQLtlbKOysEWzPupKMHIsPkzUJpdYp1ML1ljV/q+FLRKje4FvWUKTk8KekWxp2tUyn5gWUIrG7DGkE5MKpBp0njFJ17n8H81xQJs= trannguyenthaibinh46@gmail.com
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFIaDF0Djyet+bEei6Y79dmv0XDkRf3YTNqs2taXdfkb trannguyenthaibinh46@gmail.com
 ```
 
 ## SET WINDOWS ENVIRONMENT VARIABLE & PATH _(ADMIN)_
