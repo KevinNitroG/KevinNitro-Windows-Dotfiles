@@ -8,7 +8,7 @@
 [user]
 	name = KevinNitroG
 	email = trannguyenthaibinh46@gmail.com
-	signingkey = C:\\Users\\trann\\.ssh\\main_ssh.pub
+	signingkey = C:\\Users\\trann\\.ssh\\main_ssh
 [safe]
 	directory = E:/
 	directory = D:/My Apps
