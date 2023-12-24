@@ -140,5 +140,9 @@
         "key": "ctrl+k ctrl+w",
         "command": "workbench.action.terminal.killAll",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+u ctrl+s",
+        "command": "git.sync"
     }
 ]

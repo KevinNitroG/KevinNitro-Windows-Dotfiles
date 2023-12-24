@@ -10,6 +10,7 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadlineOption -EditMode Windows
+Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
 
 # Dotfiles config
 function df {

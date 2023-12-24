@@ -4,7 +4,7 @@ storage.size=500
 app.autostart-mode="off"
 storage.last-location="D:\\Program Files\\Spotify Cache"
 campaign-id="organic"
-core.clock_delta=-3
+core.clock_delta=0
 storage.location="D:\\Program Files\\Spotify Cache"
 autologin.username="31ms2mpwauroluxnjudw7a6u336e"
 autologin.saved_credentials="{\"31ms2mpwauroluxnjudw7a6u336e\":[\"31ms2mpwauroluxnjudw7a6u336e\",\"DA8fJcl4zP4FMlwGUw78KKQoP+kBE6LcMti+/te5Y8xl9D4fZNdPn0wg6ICF2it1gQyWU1C2b+AOF8KoC5vLWkFVEu9ZJeQpeKwNWmW9wZJecrYraIv9SxwGgddXmw68+y+vxhKwoGHeeRuuFFYOTnlCYlSnE9mS2N8nNE57anOoxyvK9G4oGtnqlVluxeVowxX9JmUm9G5rKSFt/808m0xOZE0tmsC9VqxlTp9US2xWRnmfSQ3ns94x3qNXtViuoklhrGKmre1UeP5wiM5f0So9nNG0Ymt5txr+W+y7eFzZX6SkQaFargzcPoxORDNquuibnnDGrRJJ2Uv7HdBjbokFAfKa6RohvfXQmXdD/5E=\"]}"
