@@ -6,11 +6,10 @@ Import-Module -Name posh-wakatime
 Import-Module -Name posh-git
 
 # PSReadLine config
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadlineOption -EditMode Windows
-Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
 
 # Dotfiles config
 function df {
@@ -51,4 +50,18 @@ function pdfa {
 function adfs {
 	dfs
 	pdfs
+}
+
+# BATTERY CHECK
+
+function batteryCheck {
+	powercfg /batteryreport
+	& "$env:USERPROFILE\battery-report.html"
+	Start-Sleep -Seconds 1
+	Remove-Item -Path "$env:USERPROFILE\battery-report.html" -Force
+}
+
+# SPICETIFY UPDATE
+function spicetifyUpdate {
+	& "$env:USERPROFILE\kevinnitro_scripts\spicetifyUpdateScript.ps1"
 }

@@ -10,7 +10,7 @@ function Update-Extension {
     if (Test-Path "$env:LOCALAPPDATA\\spicetify\\Extensions\\$extensionName") {
         Remove-Item -Path "$env:LOCALAPPDATA\\spicetify\\Extensions\\$extensionName"
     }
-    curl -o "$env:LOCALAPPDATA\\spicetify\\Extensions\\$extensionName" "$extensionURL"
+    wget -O "$env:LOCALAPPDATA\\spicetify\\Extensions\\$extensionName" "$extensionURL"
 }
 
 # Update spiceify-cli
@@ -31,7 +31,7 @@ echo "Done updating Beautiful Lyrics!"
 
 echo "Update Themes - Catppuccin"
 Remove-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin" -Recurse
-curl -o "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin.zip" "https://codeload.github.com/catppuccin/spicetify/zip/refs/heads/main"
+wget -O "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin.zip" "https://codeload.github.com/catppuccin/spicetify/zip/refs/heads/main"
 Expand-Archive -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin.zip" -DestinationPath "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin-extracted"
 Move-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin-extracted\\spicetify-main\\catppuccin" -Destination "$env:LOCALAPPDATA\\spicetify\\Themes\\"
 Remove-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin.zip"
