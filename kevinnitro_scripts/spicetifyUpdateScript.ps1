@@ -37,3 +37,6 @@ Move-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin-extracted\\spi
 Remove-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin.zip"
 Remove-Item -Path "$env:LOCALAPPDATA\\spicetify\\Themes\\catppuccin-extracted" -Recurse
 echo "Done updating Themes - Catppuccin!"
+
+# SPICETIFY APPLY
+spicetify.exe apply
