@@ -20,12 +20,16 @@ spicetify.exe update
 # Update extensions
 
 echo "Update Volume Percentage"
-Update-Extension "volumePercentage.js" "https://raw.githubusercontent.com/daksh2k/Spicetify-stuff/master/Extensions/volumePercentage.js"
+Update-Extension "volumePercentage.js" "https://github.com/daksh2k/Spicetify-stuff/raw/master/Extensions/volumePercentage.js"
 echo "Done updating Volume Percentage!"
 
 echo "Update Beautiful Lyrics"
 Update-Extension "beautiful-lyrics.js" "https://github.com/surfbryce/beautiful-lyrics/raw/main/dist/beautiful-lyrics.js"
 echo "Done updating Beautiful Lyrics!"
+
+echo "Update Adblock"
+Update-Extension "adblock.js" "https://github.com/CharlieS1103/spicetify-extensions/raw/main/adblock/adblock.js"
+echo "Done updating Adblock!"
 
 # Theme update
 
