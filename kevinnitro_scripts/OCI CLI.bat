@@ -1,0 +1,1 @@
+powershell -File "D:\My Apps\ENV Tools\OCI CLI\installer\Lib\site-packages\oci_cli\bin\OciTabExpansion.ps1"

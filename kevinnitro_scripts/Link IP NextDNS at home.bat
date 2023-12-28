@@ -1,0 +1,1 @@
+curl "https://link-ip.nextdns.io/442fd8/18bf264a6c664704"
