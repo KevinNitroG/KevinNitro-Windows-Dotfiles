@@ -65,3 +65,8 @@ function batteryCheck {
 function spicetifyUpdate {
 	& "$env:USERPROFILE\kevinnitro_scripts\spicetifyUpdateScript.ps1"
 }
+
+# CLEAR PSREADLINE HISTORY
+function clearPSReadLineHistory {
+	Get-PSReadlineOption | select -expand historysavepath | Remove-Item
+}
