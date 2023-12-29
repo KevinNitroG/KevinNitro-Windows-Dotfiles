@@ -113,7 +113,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 2. Install apps
 
 ```installChocoApps.ps1
-choco install putty spotify spicetify-cli spicetify-marketplace 7zip winrar internet-download-manager vscode authy-desktop warp git javaruntime vlc nodejs python obs-studio.install parsec powershell-core powertoys sublimetext3 ultraviewer winfsp winscp -y
+choco install putty spotify spicetify-cli spicetify-marketplace 7zip winrar internet-download-manager vscode authy-desktop warp git javaruntime vlc nodejs python obs-studio.install parsec powershell-core powertoys sublimetext3 ultraviewer winfsp winscp docker-desktop neovim -y
 ```
 
 3. Patch apps mod
