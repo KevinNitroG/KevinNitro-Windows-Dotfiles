@@ -144,5 +144,9 @@
     {
         "key": "ctrl+u ctrl+s",
         "command": "git.sync"
+    },
+    {
+        "key": "ctrl+u ctrl+m",
+        "command": "editor.action.toggleMinimap"
     }
 ]
