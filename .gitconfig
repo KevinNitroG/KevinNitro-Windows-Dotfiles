@@ -1,0 +1,31 @@
+[core]
+	editor = \"C:\\Users\\kevinnitro\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = KevinNitroG
+	email = trannguyenthaibinh46@gmail.com
+	signingkey = C:/Users/kevinnitro/.ssh/id_rsa.pub
+[safe]
+	directory = E:/
+	directory = D:/My Apps
+	directory = E:/Git Repo
+[alias]
+    s = status
+    co = checkout
+    cob = checkout -b
+    del = branch -D
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    save = !git add -A && git commit -m 'chore: savepoint'
+    undo = reset HEAD~1 --mixed
+    res = !git reset --hard
+    done = !git push origin HEAD
+    lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+[gpg]
+	program = C:/Program Files (x86)/Gpg4win/../GnuPG/bin/gpg.exe
+	format = ssh
+[commit]
+	gpgsign = true

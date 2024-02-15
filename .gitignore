@@ -1,0 +1,20 @@
+# EVKey
+**/evkmacro.txt
+**/evkau.exe
+
+# Unikey
+**/ukmacro.txt
+
+# Rclone
+**/rclone.conf
+
+# Traffic Monitor
+**/TrafficMonitor/history_traffic.dat
+**/TrafficMonitor/history_traffic.dat.bak
+**/TrafficMonitor/error.log
+
+# Wakatime
+**/.wakatime.cfg
+
+# ssh
+**/.ssh/
