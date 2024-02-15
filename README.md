@@ -173,11 +173,13 @@ irm https://massgrave.dev/get | iex
 
 ### Others
 
+-   [ ] Change ownership of old folders / files
 -   [ ] Install [Cursor](KevinNitro-Files/Windows-11-Cursor-by-rosea92//dark/regular/01.%20default/Install.inf)
 -   [ ] [VisualCppRedist AIO](https://github.com/abbodi1406/vcredist/releases/latest/download/VisualCppRedist_AIO_x86_x64.exe)
 -   [ ] Change `Downloads`, `Desktop`,... location
 -   [ ] Restore Powertoys settings
 -   [ ] Chrome flags
+-   [ ] Spotify `notepad %USERPROFILE%\AppData\Roaming\Spotify\prefs`: `storage.size=500`
 -   [ ] [iSlide](https://islide-powerpoint.com/en/downloads-en)
 -   [ ] [3UTools](https://www.3u.com/)
 -   [ ] [qBittorrent _(qt6)_](https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/latest)
