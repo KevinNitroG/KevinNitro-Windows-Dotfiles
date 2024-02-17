@@ -1,5 +1,8 @@
 oh-my-posh init pwsh --config 'C:\Users\kevinnitro\AppData\Local\Programs\oh-my-posh\themes\hunk.omp.json' | Invoke-Expression
 
+# zoxide
+Invoke-Expression (& { (zoxide init powershell --no-cmd | Out-String) })
+
 import-module PsReadLine
 # Import-Module -Name Terminal-Icons
 Import-Module -Name posh-wakatime
@@ -13,6 +16,7 @@ Set-PSReadlineOption -EditMode Windows
 
 # ALIAS
 Set-Alias -Name which -Value Get-Command
+Set-Alias -Name c -Value __zoxide_z
 
 # Dotfiles config
 . "$env:USERPROFILE\KevinNitro-Files\Scripts\Powershell\dotfilesFunctions.ps1"
