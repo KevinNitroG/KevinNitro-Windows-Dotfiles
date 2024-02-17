@@ -6,6 +6,8 @@ Install-Module -Name posh-wakatime -Force
 Install-Module posh-git -Force
 
 choco install winget-cli `
+    zoxide `
+    fzf `
     putty `
     spotify `
     spicetify-cli `
