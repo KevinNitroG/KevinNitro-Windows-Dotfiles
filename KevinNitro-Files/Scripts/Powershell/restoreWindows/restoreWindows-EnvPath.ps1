@@ -3,22 +3,11 @@ $currentPath = [System.Environment]::GetEnvironmentVariable("Path", [System.Envi
 
 # Define multiple paths as an array
 $newPaths = @(
-	"D:\My Apps\ENV Tools\Java 8\bin",
-	"D:\My Apps\ENV Tools\NodeJS\",
 	"D:\My Apps\ENV Tools\OCI CLI\bin",
-	"D:\My Apps\ENV Tools\ffmpeg\bin",
-	"D:\My Apps\ENV Tools\yt-dlp",
-	"D:\My Apps\ENV Tools\SilentCMD",
-	"D:\My Apps\Other Softwares\Rclone",
+	"C:\Users\kevinnitro\KevinNitro-Files\Apps\SilentCMD",
 	"D:\My Apps\ENV Tools\Koyeb CLI",
-	"D:\My Apps\ENV Tools\wget",
-	"D:\My Apps\ENV Tools\OpenSSL-Win64\bin",
-	"D:\My Apps\ENV Tools\adb",
-	"D:\My Apps\ENV Tools\WhoIs",
 	"D:\My Apps\ENV Tools\Solution Merge",
-	"D:\My Apps\ENV Tools\ViVeTool",
 	"D:\My Apps\ENV Tools\MinGW x64\bin",
-	"D:\My Apps\ENV Tools\gh\bin",
 	"D:\My Apps\ENV Tools\vcpkg",
 	"D:\My Apps\ENV Tools\fastfetch",
 	"D:\My Apps\ENV Tools\goodbyedpi"
@@ -44,3 +33,6 @@ setx /M PIP_CACHE_DIR "E:\cache\pip"
 
 # VCPKG binary cache
 setx /M VCPKG_BINARY_CACHE "E:\packages\vcpkg"
+
+# RCLONE CONFIG FILE PATH
+setx /M RCLONE_CONFIG "C:\Users\kevinnitro\KevinNitro-Files\Apps\Rclone\rclone.conf"

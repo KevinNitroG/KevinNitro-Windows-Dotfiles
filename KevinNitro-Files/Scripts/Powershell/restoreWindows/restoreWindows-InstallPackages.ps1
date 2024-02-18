@@ -32,6 +32,15 @@ choco install winget-cli `
     docker-desktop `
     neovim `
     itunes `
+    ffmpeg `
+    adb `
+    winfetch `
+    gh `
+    openssl `
+    whois `
+    wget `
+    vivetool `
+    yt-dlp `
     -y
 
 # INSTALL OH-MY-POSH
