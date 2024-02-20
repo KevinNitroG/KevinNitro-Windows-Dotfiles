@@ -3,7 +3,7 @@ function df {
 }
 
 function dfs {
-	df pull
+	# df pull
 	df add -u
 	df commit -m "$(Get-Date -Format 'h:mm tt on d/M/y')"
 	df push
