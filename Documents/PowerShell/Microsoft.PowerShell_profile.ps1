@@ -17,6 +17,7 @@ Set-PSReadlineOption -EditMode Windows
 
 # ALIAS
 Set-Alias -Name which -Value Get-Command
+Set-Alias -Name v -Value nvim
 
 # Dotfiles config
 . "$env:USERPROFILE\KevinNitro-Files\Scripts\Powershell\dotfilesFunctions.ps1"
