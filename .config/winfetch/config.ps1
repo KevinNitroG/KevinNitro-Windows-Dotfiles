@@ -7,7 +7,7 @@
 # $ascii = $true
 
 # Set the version of Windows to derive the logo from.
-$logo = "Windows 11"
+# $logo = "Windows 11"
 
 # Specify width for image/logo
 # $imgwidth = 24
@@ -47,14 +47,14 @@ $blink = $true
 # }
 
 # Configure which disks are shown
-$ShowDisks = @("C:", "D:", "E:")
+$ShowDisks = @("C:", "D:")
 # Show all available disks
 # $ShowDisks = @("*")
 
 # Configure which package managers are shown
 # disabling unused ones will improve speed
 # $ShowPkgs = @("winget", "scoop", "choco")
-$ShowPkgs = @("winget", "choco")
+# $ShowPkgs = @("winget", "choco")
 
 # Use the following option to specify custom package managers.
 # Create a function with that name as suffix, and which returns

@@ -1,31 +1,31 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+shift+c"
         },
         {
-            "command": {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 3
             },
             "keys": "ctrl+4"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -33,11 +33,24 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 7
             },
             "keys": "ctrl+8"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+alt+down"
         },
         {
             "command": "unbound",
@@ -84,77 +97,80 @@
             "keys": "alt+shift+plus"
         },
         {
-            "command": {
-                "action": "splitPane",
-                "split": "down"
-            },
-            "keys": "ctrl+alt+down"
-        },
-        {
-            "command": {
-                "action": "switchToTab",
-                "index": 4
-            },
-            "keys": "ctrl+5"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "up"
             },
             "keys": "ctrl+alt+up"
         },
         {
-            "command": {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "keys": "ctrl+5"
+        },
+        {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 0
             },
             "keys": "ctrl+1"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 1
             },
             "keys": "ctrl+2"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 2
             },
             "keys": "ctrl+3"
         },
         {
-            "command": {
-                "action": "switchToTab",
-                "index": 6
-            },
-            "keys": "ctrl+7"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 5
             },
             "keys": "ctrl+6"
         },
         {
-            "command": {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 6
+            },
+            "keys": "ctrl+7"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "right"
             },
             "keys": "ctrl+alt+right"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 4294967295
             },
             "keys": "ctrl+9"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "left"
             },
@@ -168,20 +184,24 @@
     "initialCols": 120,
     "initialPosition": ",",
     "initialRows": 28,
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "adjustIndistinguishableColors": "indexed",
             "backgroundImage": null,
             "backgroundImageOpacity": 0.4,
             "colorScheme": "Moonlight II",
             "elevate": false,
             "experimental.retroTerminalEffect": false,
-            "font": {
+            "font": 
+            {
                 "face": "JetBrainsMono Nerd Font Mono",
                 "size": 14.0,
                 "weight": "medium"
@@ -190,11 +210,12 @@
             "padding": "8",
             "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "backgroundImage": "%USERPROFILE%\\KevinNitro-Files\\Images\\Wallpapers\\windows_11_1.jpg",
                 "backgroundImageOpacity": 0.2,
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe  -noLogo",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
                 "guid": "{67cdaf64-a238-4543-9af0-11508d30e28c}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
@@ -260,7 +281,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",

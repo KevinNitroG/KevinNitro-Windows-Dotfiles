@@ -11,6 +11,8 @@ $newPaths = @(
 	"D:\My Apps\ENV Tools\vcpkg",
 	"D:\My Apps\ENV Tools\fastfetch",
 	"D:\My Apps\ENV Tools\goodbyedpi"
+	"C:\Program Files\OpenSSL-Win64\bin"
+	"C:\Program Files\GitHub CLI"
 )
 
 # Join paths with a newline character

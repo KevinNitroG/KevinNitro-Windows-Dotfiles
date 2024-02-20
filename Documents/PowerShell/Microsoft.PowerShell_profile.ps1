@@ -7,6 +7,7 @@ import-module PsReadLine
 # Import-Module -Name Terminal-Icons
 Import-Module -Name posh-wakatime
 Import-Module -Name posh-git
+Import-Module -Name "$env:USERPROFILE\KevinNitro-Files\posh-wakatime\posh-wakatime.psm1"
 
 # PSReadLine config
 Set-PSReadLineKeyHandler -Chord Tab -Function MenuComplete
