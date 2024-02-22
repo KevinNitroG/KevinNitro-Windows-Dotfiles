@@ -1,7 +1,7 @@
 oh-my-posh init pwsh --config 'C:\Users\kevinnitro\AppData\Local\Programs\oh-my-posh\themes\hunk.omp.json' | Invoke-Expression
 
 # zoxide
-Invoke-Expression (& { (zoxide init powershell --cmd c | Out-String) })
+Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
 
 import-module PsReadLine
 # Import-Module -Name Terminal-Icons
@@ -38,7 +38,7 @@ function spicetifyUpdate {
 
 # CLEAR PSREADLINE HISTORY
 function clearPSReadLineHistory {
-	Get-PSReadlineOption | Select-Object -expand historysavepath | Remove-Item
+	Get-PSReadlineOption | Select-Object -expand HistorySavePath | Remove-Item
 }
 
 # OH MY POSH UPDATE
