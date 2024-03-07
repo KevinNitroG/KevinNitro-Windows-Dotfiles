@@ -39,10 +39,10 @@
         {
             "command": 
             {
-                "action": "switchToTab",
-                "index": 7
+                "action": "splitPane",
+                "split": "down"
             },
-            "keys": "ctrl+8"
+            "keys": "ctrl+alt+down"
         },
         {
             "command": "unbound",
@@ -91,18 +91,10 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
-            },
-            "keys": "ctrl+alt+down"
-        },
-        {
-            "command": 
-            {
                 "action": "switchToTab",
-                "index": 4
+                "index": 7
             },
-            "keys": "ctrl+5"
+            "keys": "ctrl+8"
         },
         {
             "command": 
@@ -111,6 +103,14 @@
                 "split": "up"
             },
             "keys": "ctrl+alt+up"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "keys": "ctrl+5"
         },
         {
             "command": 
@@ -140,17 +140,17 @@
             "command": 
             {
                 "action": "switchToTab",
-                "index": 6
+                "index": 5
             },
-            "keys": "ctrl+7"
+            "keys": "ctrl+6"
         },
         {
             "command": 
             {
                 "action": "switchToTab",
-                "index": 5
+                "index": 6
             },
-            "keys": "ctrl+6"
+            "keys": "ctrl+7"
         },
         {
             "command": 
@@ -188,7 +188,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{67cdaf64-a238-4543-9af0-11508d30e28c}",
-    "initialCols": 120,
+    "initialCols": 121,
     "initialPosition": ",",
     "initialRows": 28,
     "newTabMenu": 
@@ -215,6 +215,7 @@
             },
             "opacity": 40,
             "padding": "8",
+            "scrollbarState": "visible",
             "useAcrylic": true
         },
         "list": 
@@ -284,6 +285,18 @@
                 "guid": "{0e9ef34e-2022-5e75-bdb5-8304ed3eed8c}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{c4fea972-adca-5d90-b96b-0844d3e676d8}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{0daa56a4-6012-5bc1-98bb-45d0f7add19b}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 (2)",
                 "source": "Windows.Terminal.VisualStudio"
             }
         ]
