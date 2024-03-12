@@ -396,7 +396,9 @@
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
   "ruff.lint.enable": false,
   "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.userFileIndexingLimit": 200
+  "python.analysis.userFileIndexingLimit": 200,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.analysis.exclude": ["**/AppData/Local/Programs/Python/Python312/**/*"]
   // "editor.fontSize": 15,
   // "debug.console.fontSize": 15,
   // "terminal.integrated.fontSize": 15
