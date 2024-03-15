@@ -6,7 +6,7 @@
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, Courier New, monospace",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
@@ -356,9 +356,9 @@
     "code-runner.executorMap",
     "editor.fontSize",
     "terminal.integrated.fontSize",
-    "debug.console.fontSize",
-    "-C_Cpp.default.includePath",
-    "-C_Cpp.default.compilerPath"
+    "debug.console.fontSize"
+    // "-C_Cpp.default.includePath",
+    // "-C_Cpp.default.compilerPath"
   ],
   "chat.editor.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
   "debug.console.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
