@@ -4,6 +4,6 @@
 [submodule "KevinNitro-Files/posh-wakatime"]
 	path = KevinNitro-Files/posh-wakatime
 	url = https://github.com/Gravifer/posh-wakatime.git
-[submodule "nvchad"]
+[submodule "AppData/Local/nvim"]
 	path = AppData/Local/nvim
 	url = https://github.com/NvChad/starter
