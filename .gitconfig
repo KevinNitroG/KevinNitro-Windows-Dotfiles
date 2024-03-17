@@ -1,5 +1,6 @@
 [core]
-	editor = \"C:\\Users\\kevinnitro\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	; editor = \"C:\\Users\\kevinnitro\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	editor = nvim
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f

@@ -204,7 +204,7 @@
             "adjustIndistinguishableColors": "indexed",
             "backgroundImage": null,
             "backgroundImageOpacity": 0.4,
-            "colorScheme": "Catppuccin Macchiato",
+            "colorScheme": "Moonlight II",
             "elevate": false,
             "experimental.retroTerminalEffect": false,
             "font": 
@@ -222,12 +222,13 @@
         [
             {
                 "backgroundImage": "%USERPROFILE%\\KevinNitro-Files\\Images\\Wallpapers\\windows_11_1.jpg",
-                "backgroundImageOpacity": 0.2,
+                "backgroundImageOpacity": 0.1,
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
                 "guid": "{67cdaf64-a238-4543-9af0-11508d30e28c}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/pwsh.png",
                 "name": "PowerShell 7",
+                "opacity": 70,
                 "startingDirectory": "%USERPROFILE%"
             },
             {
