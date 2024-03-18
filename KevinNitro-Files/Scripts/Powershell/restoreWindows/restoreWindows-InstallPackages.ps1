@@ -42,6 +42,7 @@ choco install winget-cli `
     vivetool `
     yt-dlp `
     gnuwin32-coreutils.install `
+    llvm `
     -y
 
 # INSTALL OH-MY-POSH
