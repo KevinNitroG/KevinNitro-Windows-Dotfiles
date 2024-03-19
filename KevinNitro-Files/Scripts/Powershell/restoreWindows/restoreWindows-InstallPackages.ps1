@@ -43,6 +43,9 @@ choco install winget-cli `
     yt-dlp `
     gnuwin32-coreutils.install `
     llvm `
+    ripgrep `
+    fd `
+    lazygit `
     -y
 
 # INSTALL OH-MY-POSH
