@@ -356,9 +356,8 @@
     "code-runner.executorMap",
     "editor.fontSize",
     "terminal.integrated.fontSize",
-    "debug.console.fontSize"
-    // "-C_Cpp.default.includePath",
-    // "-C_Cpp.default.compilerPath"
+    "debug.console.fontSize",
+    "-vim.neovimPath"
   ],
   "chat.editor.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
   "debug.console.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
@@ -406,7 +405,22 @@
     "**/.git/",
     "**/venv/"
   ],
-  "markdown.extension.tableFormatter.normalizeIndentation": true
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "vim.enableNeovim": true,
+  "vim.highlightedyank.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.neovimPath": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+  "vim.neovimUseConfigFile": true,
+  "vim.smartRelativeLine": true,
+  "vim.timeout": 500,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false
   // "editor.fontSize": 15,
   // "debug.console.fontSize": 15,
   // "terminal.integrated.fontSize": 15
