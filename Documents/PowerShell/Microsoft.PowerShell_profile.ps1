@@ -183,9 +183,9 @@ function touch($file) {
 function sed($file, $find, $replace) {
     (Get-Content $file).replace("$find", $replace) | Set-Content $file
 }
-function which($name) {
-    Get-Command $name | Select-Object -ExpandProperty Definition
-}
+# function which($name) {
+#     Get-Command $name | Select-Object -ExpandProperty Definition
+# }
 function export($name, $value) {
     set-item -force -path "env:$name" -value $value;
 }
@@ -194,4 +194,13 @@ function pkill($name) {
 }
 function pgrep($name) {
     Get-Process $name
+}
+
+# Powwershell profile from https://github.com/craftzdog/dotfiles-public/blob/master/.config/powershell/user_profile.ps1
+
+[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
+
+function which ($command) {
+  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
