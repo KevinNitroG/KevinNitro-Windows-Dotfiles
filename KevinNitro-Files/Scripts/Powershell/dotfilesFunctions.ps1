@@ -12,5 +12,11 @@ function dfs {
 }
 
 function dfa {
+    cd
 	df add $args
+}
+
+function df-submodule-update {
+    cd
+    df submodule update --init --recursive --remote --rebase
 }
