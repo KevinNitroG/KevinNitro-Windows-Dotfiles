@@ -5,46 +5,55 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 Install-Module -Name posh-wakatime -Force
 Install-Module posh-git -Force
 
-choco install winget-cli `
-    zoxide `
-    fzf `
-    putty `
-    spotify `
-    spicetify-cli `
-    spicetify-marketplace `
-    7zip `
+choco install `
+# NECESSARY
+    winget-cli `
+    wget `
     winrar `
+    7zip `
     internet-download-manager `
+    openssl `
+# CODE EDITOR / IDE
+    neovim `
     vscode `
-    authy-desktop `
-    warp `
-    javaruntime `
-    vlc `
+    sublimetext3 `
+# ENVIRONMENT, LANGUAGE
+    llvm `
+    mingw `
+    gnuwin32-coreutils.install `
     nodejs `
     python `
+    javaruntime `
+    rust `
+# APPS
+    warp `
+    vlc `
+    spotify `
+    # spicetify-cli `
+    # spicetify-marketplace `
+    # authy-desktop `
     obs-studio.install `
     parsec `
     powertoys `
-    sublimetext3 `
+# OTHER APPS
     ultraviewer `
+    putty `
     winfsp `
     winscp `
     docker-desktop `
-    neovim `
     itunes `
-    ffmpeg `
-    adb `
+# OTHER TOOLS
     winfetch `
-    gh `
-    openssl `
-    whois `
-    wget `
-    vivetool `
-    yt-dlp `
-    gnuwin32-coreutils.install `
-    llvm `
+    ffmpeg `
+    yt-dlp `    
+    zoxide `
+    fzf `
     ripgrep `
     fd `
+    whois `
+    adb `
+    gh `
+    vivetool `
     lazygit `
     -y
 
