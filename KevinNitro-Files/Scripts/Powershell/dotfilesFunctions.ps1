@@ -5,7 +5,7 @@ function df {
 function dfs {
 	# df pull
     cd
-    df submodule update --init --recursive --remote --rebase
+    # df submodule update --init --recursive --remote --rebase
 	df add -u
 	df commit -m "$(Get-Date -Format 'h:mm tt on d/M/y')"
 	df push
