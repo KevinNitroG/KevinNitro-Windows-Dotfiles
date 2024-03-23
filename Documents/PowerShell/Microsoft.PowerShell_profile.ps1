@@ -21,6 +21,7 @@ Set-PSReadlineOption -EditMode Windows
 # BATTERY CHECK
 
 function Check-Battery {
+    cd
 	powercfg /batteryreport
 	& "$env:USERPROFILE\battery-report.html"
 	Start-Sleep -Seconds 1
