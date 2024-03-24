@@ -35,3 +35,5 @@
 	autoCorrect = prompt
 [log]
 	date = iso
+[init]
+	defaultBranch = main

@@ -26,6 +26,7 @@ choco install `
     javaruntime `
     rust `
 # APPS
+    powertoys `
     warp `
     vlc `
     spotify `
@@ -33,8 +34,8 @@ choco install `
     # spicetify-marketplace `
     # authy-desktop `
     obs-studio.install `
+    anydesk `
     parsec `
-    powertoys `
 # OTHER APPS
     ultraviewer `
     putty `
@@ -45,7 +46,7 @@ choco install `
 # OTHER TOOLS
     winfetch `
     ffmpeg `
-    yt-dlp `    
+    yt-dlp `
     zoxide `
     fzf `
     ripgrep `

@@ -6,18 +6,18 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command": 
-            {
                 "action": "switchToTab",
                 "index": 7
             },
             "keys": "ctrl+8"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+alt+down"
         },
         {
             "command": "unbound",
@@ -66,10 +66,14 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "copy",
+                "singleLine": false
             },
-            "keys": "ctrl+alt+down"
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "command": 
@@ -78,14 +82,6 @@
                 "index": 3
             },
             "keys": "ctrl+4"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -97,12 +93,8 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "switchToTab",
-                "index": 4
-            },
-            "keys": "ctrl+5"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -111,6 +103,14 @@
                 "split": "up"
             },
             "keys": "ctrl+alt+up"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "keys": "ctrl+5"
         },
         {
             "command": 
@@ -140,17 +140,17 @@
             "command": 
             {
                 "action": "switchToTab",
-                "index": 6
+                "index": 5
             },
-            "keys": "ctrl+7"
+            "keys": "ctrl+6"
         },
         {
             "command": 
             {
                 "action": "switchToTab",
-                "index": 5
+                "index": 6
             },
-            "keys": "ctrl+6"
+            "keys": "ctrl+7"
         },
         {
             "command": 
@@ -210,7 +210,7 @@
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font Mono",
-                "size": 14.0,
+                "size": 13.0,
                 "weight": "medium"
             },
             "opacity": 40,
