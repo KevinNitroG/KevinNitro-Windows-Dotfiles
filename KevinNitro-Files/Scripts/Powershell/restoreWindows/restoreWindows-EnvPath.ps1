@@ -1,6 +1,9 @@
 # Get the current value of the Path variable (User)
 $currentPath = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::User)
 
+# Allow long path
+Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+
 # Define multiple paths as an array
 $newPaths = @(
 	"D:\My Apps\ENV Tools\OCI CLI\bin",
