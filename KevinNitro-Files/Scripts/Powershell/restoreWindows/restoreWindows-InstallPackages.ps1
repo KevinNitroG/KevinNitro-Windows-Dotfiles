@@ -6,18 +6,19 @@ Install-Module -Name posh-wakatime -Force
 Install-Module posh-git -Force
 
 choco install `
-# NECESSARY
+    # NECESSARY
     winget-cli `
     wget `
     winrar `
     7zip `
     internet-download-manager `
     openssl `
-# CODE EDITOR / IDE
+    # CODE EDITOR / IDE
+    microsoft-windows-terminal `
     neovim `
     vscode `
     sublimetext3 `
-# ENVIRONMENT, LANGUAGE
+    # ENVIRONMENT, LANGUAGE
     llvm `
     mingw `
     gnuwin32-coreutils.install `
@@ -25,25 +26,25 @@ choco install `
     python `
     javaruntime `
     rust `
-# APPS
+    # APPS
     powertoys `
     warp `
     vlc `
     spotify `
     # spicetify-cli `
     # spicetify-marketplace `
-    # authy-desktop `
-    obs-studio.install `
+# authy-desktop `
+obs-studio.install `
     anydesk `
     parsec `
-# OTHER APPS
+    # OTHER APPS
     ultraviewer `
     putty `
     winfsp `
     winscp `
     docker-desktop `
     itunes `
-# OTHER TOOLS
+    # OTHER TOOLS
     winfetch `
     ffmpeg `
     yt-dlp `
