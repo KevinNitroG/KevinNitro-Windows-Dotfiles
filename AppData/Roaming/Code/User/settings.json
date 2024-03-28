@@ -323,7 +323,8 @@
     "editor.fontSize",
     "terminal.integrated.fontSize",
     "debug.console.fontSize",
-    "-vim.neovimPath"
+    "-vim.neovimPath",
+    "-C_Cpp.clang_format_path"
   ],
   "chat.editor.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
   "debug.console.fontFamily": "JetbrainsMono Nerd Font Mono, Google Sans, Open Sans, Consolas, 'Courier New', monospace",
@@ -451,7 +452,12 @@
     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "sml": "cd $dir && sml $fileName",
     "mojo": "mojo run"
-  }
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Microsoft",
+  "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "vim.statusBarColors.commandlineinprogress": ["#007acc", "#ffffff"],
+  "gitlens.currentLine.enabled": false,
+  "gitlens.currentLine.pullRequests.enabled": false
   // "editor.fontSize": 15,
   // "debug.console.fontSize": 15,
   // "terminal.integrated.fontSize": 15
